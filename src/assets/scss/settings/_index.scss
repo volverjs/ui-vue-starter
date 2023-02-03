@@ -1,0 +1,12 @@
+// volver context (mixins, variables, etc)
+@use '@volverjs/style/scss/context' with (
+	$color-brand: #45cb85,
+	$zero-specificity-for-utilities: false,
+	$font-family-serif: "'Zilla Slab', sans-serif"
+);
+
+// custom settings
+@forward 'spacing';
+
+// custom components
+@forward 'components';

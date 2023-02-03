@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use '@volverjs/style/scss/context' as *;
+
+// extend vv-button settings
+$vv-nav: map.deep-merge(
+	$vv-nav,
+	(
+		element: (
+			heading-label: (
+				font-family: var(--font-serif),
+				font-weight: var(--font-normal),
+				font-size: 1.2em,
+				padding: var(--spacing-xs) 0,
+			),
+		),
+	)
+);

@@ -1,0 +1,19 @@
+// volver base (reset and props)
+@use '@volverjs/style/scss/base';
+
+// volver dark theme
+@use '@volverjs/style/scss/themes/dark';
+
+// volver components (not in @volverjs/ui-vue library - the others are automatically imported)
+@use '@volverjs/style/scss/components/vv-text';
+@use '@volverjs/style/scss/components/vv-skeleton';
+@use '@volverjs/style/scss/components/vv-nav';
+
+// volver utilities
+@use '@volverjs/style/scss/utilities';
+
+// custom style
+@use 'custom';
+
+// volver preflight
+@import '@volverjs/style/scss/preflight';
