@@ -1,0 +1,13 @@
+@use 'sass:map';
+@use '@volverjs/style/scss/context' as *;
+
+$spacing-dynamic: map.deep-merge(
+	$spacing-dynamic,
+	(
+		xxl: (
+			xxs: 26,
+			sm: 38,
+			lg: 50,
+		),
+	)
+);

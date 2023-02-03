@@ -1,0 +1,66 @@
+{
+  "name": "@volverjs/ui-vue-starter",
+  "description": "A Volverjs Template (Vite + Vue) inspired by Vitesse.",
+  "author": "24/Consulting",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "volver",
+    "volverjs",
+    "ui",
+    "vue3",
+    "vite",
+    "template"
+  ],
+  "homepage": "https://volverjs.github.io/ui-vue-starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/volverjs/ui-vue-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/volverjs/ui-vue-starter/issues"
+  },
+  "version": "0.0.0",
+  "engines": {
+    "node": ">= 16.x"
+  },
+  "packageManager": "pnpm@7.8.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --port 8080 --open",
+    "lint": "eslint ."
+  },
+  "type": "module",
+  "dependencies": {
+    "@volverjs/style": "^0.1.8",
+    "@volverjs/ui-vue": "0.0.4",
+    "@vueuse/core": "^9.12.0",
+    "@vueuse/head": "^1.0.24",
+    "pinia": "^2.0.30",
+    "vue": "^3.2.47",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "postcss-html": "^1.5.0",
+    "sass": "^1.58.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "typescript": "^4.9.5",
+    "unplugin-auto-import": "^0.13.0",
+    "unplugin-vue-components": "^0.23.0",
+    "vite": "^4.1.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-pages": "^0.28.0",
+    "vite-plugin-pwa": "^0.14.1",
+    "vite-plugin-stylelint": "^4.1.8"
+  }
+}
