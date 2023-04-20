@@ -33,7 +33,7 @@
   "type": "module",
   "dependencies": {
     "@volverjs/style": "^0.1.8",
-    "@volverjs/ui-vue": "0.0.4",
+    "@volverjs/ui-vue": "0.0.5",
     "@vueuse/core": "^9.12.0",
     "@vueuse/head": "^1.0.24",
     "pinia": "^2.0.30",
