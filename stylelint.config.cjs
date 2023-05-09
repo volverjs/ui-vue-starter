@@ -2,7 +2,7 @@ module.exports = {
 	extends: [
 		'stylelint-config-standard-scss',
 		'stylelint-config-recommended-vue/scss',
-		'stylelint-config-prettier',
+		'stylelint-config-standard',
 	],
 	rules: {
 		'property-no-unknown': null,

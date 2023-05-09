@@ -1,4 +1,5 @@
-import { VolverPlugin, VvButton } from '@volverjs/ui-vue'
+import { VolverPlugin } from '@volverjs/ui-vue'
+import { VvButton } from '@volverjs/ui-vue/components'
 import icons from '@volverjs/ui-vue/icons'
 import { UserModule } from '~/types'
 
