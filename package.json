@@ -27,7 +27,7 @@
 	"packageManager": "pnpm@7.8.0",
 	"scripts": {
 		"build": "vite build",
-		"dev": "vite --port 8081 --open",
+		"dev": "vite --port 8080 --open",
 		"lint": "eslint ."
 	},
 	"type": "module",
