@@ -58,7 +58,7 @@
 		"unplugin-vue-components": "^0.24.1",
 		"vite": "^4.3.5",
 		"vite-plugin-eslint": "^1.8.1",
-		"vite-plugin-pages": "^0.29.0",
+		"vite-plugin-pages": "^0.30.1",
 		"vite-plugin-pwa": "^0.14.7",
 		"vite-plugin-stylelint": "^4.3.0"
 	}
