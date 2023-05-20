@@ -59,7 +59,7 @@
 		"vite": "^4.3.5",
 		"vite-plugin-eslint": "^1.8.1",
 		"vite-plugin-pages": "^0.29.0",
-		"vite-plugin-pwa": "^0.14.7",
+		"vite-plugin-pwa": "^0.15.0",
 		"vite-plugin-stylelint": "^4.3.0"
 	}
 }
