@@ -1,5 +1,8 @@
 <script setup lang="ts">
 	import '~/composables/useTheme'
+	import { useAlert } from '@volverjs/ui-vue/composables'
+
+	const { removeAlert, alerts } = useAlert()
 
 	const { colorHex } = useColor('brand')
 
@@ -24,4 +27,11 @@
 
 <template>
 	<RouterView />
+	<VvAlertGroup
+		name="alerts"
+		:items="alerts"
+		inline="middle"
+		block="bottom"
+		position="fixed"
+		@close="removeAlert" />
 </template>

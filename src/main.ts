@@ -3,7 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { createHead } from '@vueuse/head'
 import routes from 'virtual:generated-pages'
 import App from '~/App.vue'
-import { UserModule } from '~/types'
+import { AppModule } from '~/types'
+import { logger } from './common/Logger'
 
 // install all modules under `modules/`
 const app = createApp(App)
@@ -21,10 +22,25 @@ app.use(router)
 const head = createHead()
 app.use(head)
 
-Object.values(
-	import.meta.glob<{ install: UserModule }>('./modules/*.ts', {
-		eager: true,
-	}),
-).map((i) => i.install?.({ app, router, routes, head }))
+// setup store (auto-imported from pinia)
+const store = createPinia()
+app.use(store)
+
+// install all modules under `modules/`
+Promise.all(
+	Object.values(
+		import.meta.glob<{ install: AppModule }>('./modules/*.ts', {
+			eager: true,
+		}),
+	).map((i) =>
+		Promise.resolve(i.install?.({ app, router, routes, head, store })),
+	),
+)
+	.then(() => {
+		logger.log('All modules installed')
+	})
+	.catch((e) => {
+		logger.error(e)
+	})
 
 app.mount('#app')

@@ -8,6 +8,11 @@
 @use '@volverjs/style/scss/components/vv-text';
 @use '@volverjs/style/scss/components/vv-skeleton';
 @use '@volverjs/style/scss/components/vv-nav';
+@use '@volverjs/style/scss/components/vv-input-text';
+@use '@volverjs/style/scss/components/vv-select';
+@use '@volverjs/style/scss/components/vv-dropdown';
+@use '@volverjs/style/scss/components/vv-dropdown-option';
+@use '@volverjs/style/scss/components/vv-dropdown-action';
 
 // volver utilities
 @use '@volverjs/style/scss/utilities';
