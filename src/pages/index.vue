@@ -21,7 +21,7 @@
 			<VvButtonGroup>
 				<VvButton
 					:to="{
-						name: 'docs',
+						name: 'Docs',
 					}"
 					modifiers="primary rounded">
 					Getting Started

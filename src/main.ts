@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router/auto'
+import { routes } from 'vue-router/auto/routes'
 import { createHead } from '@vueuse/head'
-import routes from 'virtual:generated-pages'
 import App from '~/App.vue'
 import { AppModule } from '~/types'
 import { logger } from './common/Logger'
@@ -12,7 +12,6 @@ const app = createApp(App)
 // setup pages with layouts
 const router = createRouter({
 	history: createWebHistory(),
-	routes,
 	linkActiveClass: 'selected',
 	linkExactActiveClass: 'current',
 })

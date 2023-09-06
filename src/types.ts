@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import { Router, RouteRecordRaw } from 'vue-router'
+import { Router, RouteRecordRaw } from 'vue-router/auto'
 import { HeadClient } from '@vueuse/head'
 import { Pinia } from 'pinia'
 

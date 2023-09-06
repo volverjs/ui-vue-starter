@@ -298,6 +298,9 @@
     "watchTriggerable": true,
     "watchWithFilter": true,
     "whenever": true,
-    "toValue": true
+    "WritableComputedRef": true,
+    "toValue": true,
+    "defineLoader": true,
+    "definePage": true
   }
 }

@@ -18,5 +18,11 @@
 			"~/*": ["src/*"]
 		}
 	},
+	"include": [
+		"typed-router.d.ts",
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.vue"
+	],
 	"exclude": ["dist", "node_modules"]
 }

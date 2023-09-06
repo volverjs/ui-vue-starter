@@ -6,19 +6,19 @@
 				{
 					label: 'Try it now!',
 					to: {
-						name: 'docs',
+						name: 'Docs',
 					},
 				},
 				{
 					label: 'Checklist',
 					to: {
-						name: 'docs-checklist',
+						name: 'DocsChecklist',
 					},
 				},
 				{
 					label: 'Usage',
 					to: {
-						name: 'docs-usage',
+						name: 'DocsUsage',
 					},
 				},
 			],
@@ -29,7 +29,7 @@
 				{
 					label: 'Forms',
 					to: {
-						name: 'docs-forms',
+						name: 'DocsForms',
 					},
 				},
 			],

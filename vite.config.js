@@ -3,12 +3,16 @@ import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import ESLint from 'vite-plugin-eslint'
 import Stylelint from 'vite-plugin-stylelint'
-import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import { VolverResolver } from '@volverjs/ui-vue/resolvers/unplugin'
+import {
+	VueRouterAutoImports,
+	getPascalCaseRouteName,
+} from 'unplugin-vue-router'
+import VueRouter from 'unplugin-vue-router/vite'
 
 export default defineConfig({
 	resolve: {
@@ -35,9 +39,9 @@ export default defineConfig({
 		// https://github.com/ModyQyW/vite-plugin-stylelint
 		Stylelint(),
 
-		// https://github.com/hannoeru/vite-plugin-pages
-		Pages({
-			routeBlockLang: 'yaml',
+		// https://github.com/posva/unplugin-vue-router
+		VueRouter({
+			getRouteName: (routeNode) => getPascalCaseRouteName(routeNode),
 		}),
 
 		// https://github.com/antfu/unplugin-vue-components
@@ -63,7 +67,7 @@ export default defineConfig({
 		AutoImport({
 			imports: [
 				'vue',
-				'vue-router',
+				VueRouterAutoImports,
 				'vue-i18n',
 				'@vueuse/head',
 				'@vueuse/core',

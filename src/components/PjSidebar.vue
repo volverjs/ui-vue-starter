@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 	import type { PropType } from 'vue'
-	import type { RouterLinkProps } from 'vue-router'
+	import type { RouterLinkProps } from 'vue-router/auto'
 	defineProps({
 		menuItems: {
 			type: Array as PropType<
