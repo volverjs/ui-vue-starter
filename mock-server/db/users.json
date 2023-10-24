@@ -1,0 +1,87 @@
+[
+	{
+		"id": 1,
+		"firstName": "John",
+		"lastName": "Doe",
+		"nickname": "johndoe",
+		"age": 30,
+		"email": "john.doe@example.com",
+		"role": "user"
+	},
+	{
+		"id": 2,
+		"firstName": "Alice",
+		"lastName": "Smith",
+		"age": 25,
+		"email": "alice.smith@example.com",
+		"role": "user"
+	},
+	{
+		"id": 3,
+		"firstName": "Bob",
+		"lastName": "Johnson",
+		"nickname": "bobj",
+		"age": 35,
+		"email": "bob.johnson@example.com",
+		"role": "teacher"
+	},
+	{
+		"id": 4,
+		"firstName": "Eva",
+		"lastName": "Williams",
+		"age": 28,
+		"email": "eva.williams@example.com",
+		"role": "user"
+	},
+	{
+		"id": 5,
+		"firstName": "David",
+		"lastName": "Brown",
+		"nickname": "david_b",
+		"age": 40,
+		"email": "david.brown@example.com",
+		"role": "user"
+	},
+	{
+		"id": 6,
+		"firstName": "Grace",
+		"lastName": "Miller",
+		"age": 22,
+		"email": "grace.miller@example.com",
+		"role": "user"
+	},
+	{
+		"id": 7,
+		"firstName": "Sam",
+		"lastName": "Anderson",
+		"nickname": "sammy",
+		"age": 32,
+		"email": "sam.anderson@example.com",
+		"role": "teacher"
+	},
+	{
+		"id": 8,
+		"firstName": "Olivia",
+		"lastName": "Wilson",
+		"age": 29,
+		"email": "olivia.wilson@example.com",
+		"role": "user"
+	},
+	{
+		"id": 9,
+		"firstName": "Daniel",
+		"lastName": "Lee",
+		"nickname": "danlee",
+		"age": 45,
+		"email": "daniel.lee@example.com",
+		"role": "admin"
+	},
+	{
+		"id": 10,
+		"firstName": "Sophia",
+		"lastName": "Clark",
+		"age": 27,
+		"email": "sophia.clark@example.com",
+		"role": "user"
+	}
+]

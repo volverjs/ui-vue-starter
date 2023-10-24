@@ -1,0 +1,30 @@
+[
+    {
+        "type": "offerProductNew",
+        "metadata": {
+            "code": "Q-006329",
+            "type": "QTN",
+            "status": "toComplete"
+        },
+        "attributes": {
+            "productData": {
+                "sportCode": "837E85DB-8C76-474E-92B0-C7855A1DEEEE"
+            }
+        },
+        "id": "7D026BEC-75C3-4B76-9196-BD2A305B8ADD",
+        "relationships": {
+            "company": {
+                "type": "company",
+                "id": "5bcc50f6-3e80-6a32-2e7d-96d57cfd2e38"
+            },
+            "opportunity": {
+                "type": "opportunity",
+                "id": "A4FC003E-0BDF-47D7-8AE1-FA0351DBBAC7"
+            },
+            "salesman": {
+                "type": "contact",
+                "id": "6890EC80-ABE0-496E-8C6E-42B7AD8711BA"
+            }
+        }
+    }
+]

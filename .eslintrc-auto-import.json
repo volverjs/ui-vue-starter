@@ -301,6 +301,9 @@
     "WritableComputedRef": true,
     "toValue": true,
     "defineLoader": true,
-    "definePage": true
+    "definePage": true,
+    "injectLocal": true,
+    "provideLocal": true,
+    "useDialog": true
   }
 }

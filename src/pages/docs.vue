@@ -32,6 +32,18 @@
 						name: 'DocsForms',
 					},
 				},
+				{
+					label: 'Alerts',
+					to: {
+						name: 'DocsAlerts',
+					},
+				},
+				{
+					label: 'Query',
+					to: {
+						name: 'DocsQuery',
+					},
+				},
 			],
 		},
 	]

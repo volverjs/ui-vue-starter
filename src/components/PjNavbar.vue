@@ -14,6 +14,7 @@
 			<!-- @see modules/volver.ts for component aliases -->
 			<MyActionQuiet
 				:icon="isDark ? 'akar-icons:moon-fill' : 'akar-icons:sun-fill'"
+				class="mr-20"
 				@click="toggleDark()" />
 			<MyActionQuiet
 				href="https://github.com/volverjs/ui-vue-starter"

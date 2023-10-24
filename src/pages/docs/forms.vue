@@ -1,25 +1,18 @@
 <script setup lang="ts">
-	import { useForm } from '@volverjs/form-vue'
 	import { useAlert } from '@volverjs/ui-vue/composables'
-	import { UserSchema, UserRole } from '~/models/User'
 	import type { User } from '~/models/User'
 
-	const { addAlert } = useAlert()
-	const { VvForm, VvFormWrapper, VvFormField } = useForm(UserSchema, {
-		lazyLoad: true,
-	})
+	const { addAlert, removeAlert, alerts } = useAlert()
 
-	const formData: Ref<User> = ref({} as User)
 	const users = ref<User[]>([])
-	const onSubmit = () => {
-		users.value.push(formData.value)
+	const onSubmit = (user: User) => {
+		users.value.push(user)
 		nextTick(() => {
 			addAlert({
 				title: `User added`,
-				content: `${formData.value.firstName} ${formData.value.lastName}`,
+				content: `${user.firstName} ${user.lastName}`,
 				modifiers: 'success',
 			})
-			formData.value = {} as User
 		})
 	}
 </script>
@@ -29,65 +22,7 @@
 		<div class="flex flex-col items-center">
 			<div class="uppercase text-xl py-md">Create User</div>
 			<div class="rounded-md form-shadow w-3/4">
-				<VvForm v-model="formData" class="p-md" @submit="onSubmit">
-					<div class="">
-						<VvFormWrapper
-							v-slot="{ invalid }"
-							name="personal-data">
-							<VvAccordion
-								title="Personal data"
-								:class="{
-									'border border-warning rounded': invalid,
-								}">
-								<div>
-									<VvFormField
-										type="text"
-										name="firstName"
-										label="First name" />
-									<VvFormField
-										type="text"
-										name="lastName"
-										label="Last name" />
-									<VvFormField
-										type="text"
-										name="nickname"
-										label="Nickname" />
-									<VvFormField
-										type="text"
-										name="email"
-										label="Email" />
-									<VvFormField
-										type="number"
-										name="age"
-										label="Age" />
-								</div>
-							</VvAccordion>
-						</VvFormWrapper>
-						<VvFormWrapper v-slot="{ invalid }" name="other-fields">
-							<VvAccordion
-								title="Other fields"
-								:class="{
-									'border border-warning rounded': invalid,
-								}">
-								<div>
-									<VvFormField
-										type="combobox"
-										name="role"
-										label="Role"
-										strategy="fixed"
-										:options="[
-											UserRole.User,
-											UserRole.Admin,
-											UserRole.Teacher,
-										]" />
-								</div>
-							</VvAccordion>
-						</VvFormWrapper>
-					</div>
-					<div class="text-right mt-lg">
-						<VvButton icon="add" label="Save" type="submit" />
-					</div>
-				</VvForm>
+				<PjCreateUserForm @submit="onSubmit" />
 			</div>
 		</div>
 		<div
@@ -116,6 +51,14 @@
 		</div>
 		<PjFooter />
 	</div>
+	<VvAlertGroup
+		name="alerts"
+		:items="alerts"
+		position="fixed"
+		inline="end"
+		block="bottom"
+		@close="removeAlert">
+	</VvAlertGroup>
 </template>
 
 <style lang="scss">

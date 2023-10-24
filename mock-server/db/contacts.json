@@ -1,0 +1,29 @@
+[
+    {
+        "type": "contact",
+        "id": "6890EC80-ABE0-496E-8C6E-42B7AD8711BA",
+        "attributes": {
+            "completeName": "Mario Rossi",
+            "givenName": "Mario",
+            "familyName": "Rossi"
+        }
+    },
+    {
+        "type": "contact",
+        "id": "A214F447-08F6-404F-A78A-E1F524EA7835",
+        "attributes": {
+            "completeName": "Luigi Verdi",
+            "givenName": "Luigi",
+            "familyName": "Verdi"
+        }
+    },
+    {
+        "type": "contact",
+        "id": "50855DB9-D077-458D-98D9-4E143535691C",
+        "attributes": {
+            "completeName": "Nicola Bianchi",
+            "givenName": "Nicola",
+            "familyName": "Bianchi"
+        }
+    }
+]

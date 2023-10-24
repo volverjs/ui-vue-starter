@@ -1,0 +1,16 @@
+[
+    {
+        "type": "opportunity",
+        "id": "A4FC003E-0BDF-47D7-8AE1-FA0351DBBAC7",
+        "attributes": {
+            "code": "0123456789",
+            "expiryDate": "2019-08-24"
+        },
+        "relationships": {
+            "company": {
+                "type": "company",
+                "id": "5bcc50f6-3e80-6a32-2e7d-96d57cfd2e38"
+            }
+        }
+    }
+]

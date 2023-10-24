@@ -1,0 +1,16 @@
+[
+	{
+		"id": "dc435029-79f8-4909-b182-a02f42875703",
+		"email": "test-1@test.com",
+		"emailConfirmed": true,
+		"roles": ["admin", "backend"],
+		"options": { "name": "Mario", "surname": "Rossi" }
+	},
+	{
+		"id": "982165fb-d5dc-4ecd-a601-5db820142fe7",
+		"email": "test-2@test.com",
+		"emailConfirmed": true,
+		"roles": ["admin", "backend"],
+		"options": { "name": "Giuseppe", "surname": "Verdi" }
+	}
+]

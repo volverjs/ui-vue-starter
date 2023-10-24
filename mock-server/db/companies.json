@@ -1,0 +1,132 @@
+[
+	{
+		"type": "company",
+		"id": "5bcc50f6-3e80-6a32-2e7d-96d57cfd2e38",
+		"attributes": {
+			"vatCode": "39691330331",
+			"name": "Duis culp",
+			"website": "cillum Ut veniam reprehenderit",
+			"email": "QihpA@vXDlftPfgodIvYhgyVcTnJqcs.qpsx",
+			"certifiedMail": "TPsoHUytl@pEZgwDQs.mvl",
+			"phoneNumber": "ea Ut"
+		},
+		"relationships": {
+			"dealer": {
+				"type": "dealer",
+				"id": "10AF96F9-D05B-4ADB-92E2-312AB63B1BCB"
+			},
+			"salesman": {
+				"type": "contact",
+				"id": "6890EC80-ABE0-496E-8C6E-42B7AD8711BA"
+			},
+			"referent": {
+				"type": "contact",
+				"id": "A214F447-08F6-404F-A78A-E1F524EA7835"
+			}
+		}
+	},
+	{
+		"type": "company",
+		"id": "6a6dff06-678b-d49e-da0a-4e9b82ae3be7",
+		"attributes": {
+			"website": "pariatur id ullamco consectetur",
+			"vatCode": "13312683058",
+			"certifiedMail": "6gWmVX@BzNtScCgKQoKlaYyTseGShz.ehc",
+			"email": "yaTJ8QKtj6cTLS@feChHMPmcbIMfxHXWoRGhsYgbReXlO.viu",
+			"phoneNumber": "elit",
+			"name": "fugiat adipisicing elit"
+		},
+		"relationships": {
+			"salesman": {
+				"type": "contact",
+				"id": "6890EC80-ABE0-496E-8C6E-42B7AD8711BA"
+			},
+			"dealer": {
+				"type": "dealer",
+				"id": "10AF96F9-D05B-4ADB-92E2-312AB63B1BCB"
+			},
+			"referent": {
+				"type": "contact",
+				"id": "A214F447-08F6-404F-A78A-E1F524EA7835"
+			}
+		}
+	},
+	{
+		"type": "company",
+		"id": "66ad5aeb-f94c-2580-024e-d24fd538a006",
+		"attributes": {
+			"name": "do nostrud laboris Ut",
+			"vatCode": "63680661559",
+			"email": "pfm@OVzFKrsxyr.auz",
+			"certifiedMail": "tQuTlEoEYuu@NYD.ndnt",
+			"phoneNumber": "nulla",
+			"website": "quis offic"
+		},
+		"relationships": {
+			"salesman": {
+				"type": "contact",
+				"id": "6890EC80-ABE0-496E-8C6E-42B7AD8711BA"
+			},
+			"referent": {
+				"type": "contact",
+				"id": "A214F447-08F6-404F-A78A-E1F524EA7835"
+			},
+			"dealer": {
+				"type": "dealer",
+				"id": "10AF96F9-D05B-4ADB-92E2-312AB63B1BCB"
+			}
+		}
+	},
+	{
+		"type": "company",
+		"id": "9e07371f-e37a-da45-c762-397b08ec605c",
+		"attributes": {
+			"website": "ut ex",
+			"name": "occaecat esse ex nulla",
+			"vatCode": "53197207807",
+			"phoneNumber": "labo",
+			"email": "YHM5T@MxdJJYQFwldwrEad.yzz",
+			"certifiedMail": "pi61U5dif3T@psZbMduPYXwvpNaBDhiCDkruiZOrnmXK.vn"
+		},
+		"relationships": {
+			"dealer": {
+				"type": "dealer",
+				"id": "10AF96F9-D05B-4ADB-92E2-312AB63B1BCB"
+			},
+			"salesman": {
+				"type": "contact",
+				"id": "6890EC80-ABE0-496E-8C6E-42B7AD8711BA"
+			},
+			"referent": {
+				"type": "contact",
+				"id": "50855DB9-D077-458D-98D9-4E143535691C"
+			}
+		}
+	},
+	{
+		"type": "company",
+		"id": "ae079532-fff9-c751-4fc8-b7098e461a40",
+		"attributes": {
+			"email": "snX@VcsJAaHpRwbIzUT.ejd",
+			"certifiedMail": "PbrdrZkWWu@qLJEX.gq",
+			"name": "Excepteur sit dolore occaecat ",
+			"vatCode": "28631968022",
+			"website": "dolore",
+			"phoneNumber": "fugiat"
+		},
+		"relationships": {
+			"referent": {
+				"type": "contact",
+				"id": "50855DB9-D077-458D-98D9-4E143535691C"
+			},
+			"dealer": {
+				"type": "dealer",
+				"id": "10AF96F9-D05B-4ADB-92E2-312AB63B1BCB"
+			},
+			"salesman": {
+				"type": "contact",
+				"id": "6890EC80-ABE0-496E-8C6E-42B7AD8711BA"
+			}
+		}
+	}
+]

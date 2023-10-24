@@ -85,7 +85,7 @@ export default defineConfig({
 		VueI18n({
 			runtimeOnly: true,
 			compositionOnly: true,
-			include: [path.resolve(__dirname, 'locales/**')],
+			include: [path.resolve(__dirname, 'src/locales/**')],
 		}),
 
 		// https://github.com/antfu/vite-plugin-pwa
@@ -94,7 +94,8 @@ export default defineConfig({
 			includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
 			manifest: {
 				name: 'Volver Startup Template',
-				short_name: 'Scania',
+				short_name: 'Volver',
+				description: 'A Volverjs Template (Vite + Vue) inspired by Vitesse.',
 				theme_color: '#ffffff',
 				icons: [
 					{

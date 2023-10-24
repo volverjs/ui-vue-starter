@@ -43,8 +43,10 @@ declare module 'vue-router/auto/routes' {
     '$All': RouteRecordInfo<'$All', '/:all(.*)', { all: ParamValue<true> }, { all: ParamValue<false> }>,
     'DocsParent': RouteRecordInfo<'DocsParent', '/docs', Record<never, never>, Record<never, never>>,
     'Docs': RouteRecordInfo<'Docs', '/docs', Record<never, never>, Record<never, never>>,
+    'DocsAlerts': RouteRecordInfo<'DocsAlerts', '/docs/alerts', Record<never, never>, Record<never, never>>,
     'DocsChecklist': RouteRecordInfo<'DocsChecklist', '/docs/checklist', Record<never, never>, Record<never, never>>,
     'DocsForms': RouteRecordInfo<'DocsForms', '/docs/forms', Record<never, never>, Record<never, never>>,
+    'DocsQuery': RouteRecordInfo<'DocsQuery', '/docs/query', Record<never, never>, Record<never, never>>,
     'DocsUsage': RouteRecordInfo<'DocsUsage', '/docs/usage', Record<never, never>, Record<never, never>>,
   }
 }
