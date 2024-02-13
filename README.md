@@ -11,11 +11,11 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 
 <br>
 
-#### proudly powered by
+maintained with ❤️ by
 
 <br>
 
-[![24/Consulting](public/24consulting.svg)](https://24consulting.it)
+[![8 Wave](public/8wave.svg)](https://8wave.it)
 
 <br>
 
