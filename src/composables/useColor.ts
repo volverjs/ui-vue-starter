@@ -14,6 +14,9 @@ const hslToRgb = (h: number, s: number, l: number) => {
 export function useColor(name: string) {
 	const color = useCssVar(`--color-${name}`)
 	const colorHex = computed(() => {
+		if (!color.value) {
+			throw new Error(`The color variable --color-${name} is not defined`)
+		}
 		const [h, s, l] = color.value
 			.replace(/hsla\(|\/1|\)|deg|%/g, '')
 			.trim()

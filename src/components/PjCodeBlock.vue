@@ -1,17 +1,18 @@
 <script lang="ts" setup>
-	import type { PropType } from 'vue'
-
-	const props = defineProps({
-		code: {
-			type: [String, Array] as PropType<string | string[]>,
-			default: '',
+	const props = withDefaults(
+		defineProps<{
+			code: string | string[]
+		}>(),
+		{
+			code: '',
 		},
-	})
+	)
+
 	const code = computed(() => {
-		if (typeof props.code === 'string') {
-			return props.code
+		if (Array.isArray(props.code)) {
+			return props.code.join('\n')
 		}
-		return props.code.join('\n')
+		return props.code
 	})
 </script>
 

@@ -1,14 +1,8 @@
 <script lang="ts" setup>
-	defineProps({
-		section: {
-			type: String,
-			default: '',
-		},
-		title: {
-			type: String,
-			default: '',
-		},
-	})
+	defineProps<{
+		section: string
+		title: string
+	}>()
 </script>
 
 <template>

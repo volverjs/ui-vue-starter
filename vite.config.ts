@@ -3,16 +3,14 @@ import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import ESLint from 'vite-plugin-eslint'
 import Stylelint from 'vite-plugin-stylelint'
+import VueRouter from 'unplugin-vue-router/vite'
+import { getPascalCaseRouteName } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import { VolverResolver } from '@volverjs/ui-vue/resolvers/unplugin'
-import {
-	VueRouterAutoImports,
-	getPascalCaseRouteName,
-} from 'unplugin-vue-router'
-import VueRouter from 'unplugin-vue-router/vite'
+import WebfontDownload from 'vite-plugin-webfont-dl'
 
 export default defineConfig({
 	resolve: {
@@ -27,14 +25,8 @@ export default defineConfig({
 			include: [/\.vue$/],
 		}),
 
-		// https://github.com/gxmari007/vite-plugin-eslint
-		ESLint({
-			exclude: [
-				'**/node_modules/**',
-				'**/@volverjs/ui-vue/**',
-				'**/volver/ui-vue/**',
-			],
-		}),
+		// https://github.com/vuejs/eslint-plugin-vue
+		ESLint(),
 
 		// https://github.com/ModyQyW/vite-plugin-stylelint
 		Stylelint(),
@@ -59,6 +51,7 @@ export default defineConfig({
 				VolverResolver({
 					importStyle: 'scss',
 					directives: true,
+					cherryPick: true,
 				}),
 			],
 		}),
@@ -67,7 +60,7 @@ export default defineConfig({
 		AutoImport({
 			imports: [
 				'vue',
-				VueRouterAutoImports,
+				'vue-router',
 				'vue-i18n',
 				'@vueuse/head',
 				'@vueuse/core',
@@ -81,11 +74,9 @@ export default defineConfig({
 			},
 		}),
 
-		// https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
+		// https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n
 		VueI18n({
-			runtimeOnly: true,
-			compositionOnly: true,
-			include: [path.resolve(__dirname, 'locales/**')],
+			include: [path.resolve(__dirname, './src/locales/**')],
 		}),
 
 		// https://github.com/antfu/vite-plugin-pwa
@@ -94,7 +85,7 @@ export default defineConfig({
 			includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
 			manifest: {
 				name: 'Volver Startup Template',
-				short_name: 'Scania',
+				short_name: 'Volver',
 				theme_color: '#ffffff',
 				icons: [
 					{
@@ -116,16 +107,19 @@ export default defineConfig({
 				],
 			},
 		}),
+
+		// https://github.com/feat-agency/vite-plugin-webfont-dl
+		WebfontDownload([
+			'https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap',
+		]),
 	],
 
 	css: {
 		preprocessorOptions: {
-			scss: { additionalData: `@use "./src/assets/scss/settings" as *;` },
+			scss: {
+				additionalData: `@use "~/assets/scss/settings" as *;`,
+				api: 'modern',
+			},
 		},
-	},
-
-	optimizeDeps: {
-		include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
-		exclude: ['@volverjs/ui-vue'],
 	},
 })

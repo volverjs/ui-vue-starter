@@ -1,67 +1,76 @@
 {
-	"name": "@volverjs/ui-vue-starter",
-	"description": "A Volverjs Template (Vite + Vue) inspired by Vitesse.",
-	"author": "8 Wave",
-	"license": "MIT",
-	"keywords": [
-		"vue",
-		"volver",
-		"volverjs",
-		"ui",
-		"vue3",
-		"vite",
-		"template"
-	],
-	"homepage": "https://volverjs.github.io/ui-vue-starter",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/volverjs/ui-vue-starter"
-	},
-	"bugs": {
-		"url": "https://github.com/volverjs/ui-vue-starter/issues"
-	},
-	"version": "0.0.0",
-	"engines": {
-		"node": ">= 16.x"
-	},
-	"packageManager": "pnpm@7.8.0",
-	"scripts": {
-		"build": "vite build",
-		"dev": "vite --port 8080 --open",
-		"lint": "eslint ."
-	},
-	"type": "module",
-	"dependencies": {
-		"@volverjs/form-vue": "^0.0.13",
-		"@volverjs/style": "^0.1.11",
-		"@volverjs/ui-vue": "0.0.9",
-		"@vueuse/core": "^10.4.1",
-		"@vueuse/head": "^1.3.1",
-		"pinia": "^2.1.6",
-		"vue": "^3.3.4",
-		"vue-i18n": "^9.3.0",
-		"vue-router": "^4.2.4",
-		"zod": "^3.22.2"
-	},
-	"devDependencies": {
-		"@intlify/unplugin-vue-i18n": "^1.0.1",
-		"@vitejs/plugin-vue": "^4.3.4",
-		"@vue/eslint-config-typescript": "^11.0.3",
-		"eslint": "^8.48.0",
-		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-vue": "^9.17.0",
-		"postcss-html": "^1.5.0",
-		"sass": "^1.66.1",
-		"stylelint": "^15.10.3",
-		"stylelint-config-recommended-vue": "^1.5.0",
-		"stylelint-config-standard-scss": "^11.0.0",
-		"typescript": "^5.2.2",
-		"unplugin-auto-import": "^0.16.6",
-		"unplugin-vue-components": "^0.25.2",
-		"unplugin-vue-router": "^0.6.4",
-		"vite": "^4.4.9",
-		"vite-plugin-eslint": "^1.8.1",
-		"vite-plugin-pwa": "^0.16.4",
-		"vite-plugin-stylelint": "^5.1.1"
-	}
+  "name": "@volverjs/ui-vue-starter",
+  "description": "A Volverjs Template (Vite + Vue) inspired by Vitesse.",
+  "author": "8 wave S.r.l.",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "volver",
+    "volverjs",
+    "ui",
+    "vue3",
+    "vite",
+    "template"
+  ],
+  "homepage": "https://volverjs.github.io/ui-vue-starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/volverjs/ui-vue-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/volverjs/ui-vue-starter/issues"
+  },
+  "version": "0.0.0",
+  "engines": {
+    "node": ">= 16.x"
+  },
+  "packageManager": "pnpm@10.2.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --port 8080 --open",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "stylelint": "stylelint \"src/**/*.{vue,scss}\"",
+    "stylelint:fix": "stylelint \"src/**/*.{vue,scss}\" --fix",
+    "bundle-visualizer": "npx vite-bundle-visualizer"
+  },
+  "type": "module",
+  "dependencies": {
+    "@volverjs/form-vue": "1.0.0-beta.33",
+    "@volverjs/style": "^0.1.15",
+    "@volverjs/ui-vue": "0.0.10-beta.59",
+    "@volverjs/zod-vue-i18n": "^0.0.5",
+    "@vueuse/core": "^12.5.0",
+    "@vueuse/head": "^2.0.0",
+    "pinia": "^2.3.1",
+    "stylelint": "^16.14.1",
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.1.0",
+    "vue-router": "^4.5.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@intlify/eslint-plugin-vue-i18n": "^3.2.0",
+    "@intlify/unplugin-vue-i18n": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-typescript": "^14.3.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-vue": "^9.32.0",
+    "postcss-html": "^1.8.0",
+    "sass": "^1.83.4",
+    "stylelint-config-recommended-vue": "^1.6.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "typescript": "^5.7.3",
+    "unplugin-auto-import": "^19.0.0",
+    "unplugin-vue-components": "^28.0.0",
+    "unplugin-vue-router": "^0.11.2",
+    "vite": "^6.0.11",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-pwa": "^0.21.1",
+    "vite-plugin-stylelint": "^6.0.0",
+    "vite-plugin-webfont-dl": "^3.10.4"
+  }
 }
