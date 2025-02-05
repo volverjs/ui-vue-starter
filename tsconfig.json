@@ -8,12 +8,16 @@
 		"esModuleInterop": true,
 		"incremental": false,
 		"skipLibCheck": true,
-		"moduleResolution": "Node",
+		"moduleResolution": "Bundler",
 		"resolveJsonModule": true,
 		"noUnusedLocals": true,
 		"strictNullChecks": true,
 		"forceConsistentCasingInFileNames": true,
-		"types": ["vite/client", "vite-plugin-pages/client"],
+		"types": [
+			"vite/client",
+			"unplugin-vue-router/client",
+			"@intlify/unplugin-vue-i18n/messages"
+		],
 		"paths": {
 			"~/*": ["src/*"]
 		}

@@ -1,10 +1,10 @@
+import type { AppModule } from '~/types'
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router/auto'
-import { routes } from 'vue-router/auto/routes'
+import { createRouter, createWebHistory } from 'vue-router'
 import { createHead } from '@vueuse/head'
+import { createPinia } from 'pinia'
+import { routes } from 'vue-router/auto-routes'
 import App from '~/App.vue'
-import { AppModule } from '~/types'
-import { logger } from './common/Logger'
 
 // install all modules under `modules/`
 const app = createApp(App)
@@ -12,6 +12,7 @@ const app = createApp(App)
 // setup pages with layouts
 const router = createRouter({
 	history: createWebHistory(),
+	routes,
 	linkActiveClass: 'selected',
 	linkExactActiveClass: 'current',
 })
@@ -21,25 +22,14 @@ app.use(router)
 const head = createHead()
 app.use(head)
 
-// setup store (auto-imported from pinia)
+// setup stores
 const store = createPinia()
 app.use(store)
 
-// install all modules under `modules/`
-Promise.all(
-	Object.values(
-		import.meta.glob<{ install: AppModule }>('./modules/*.ts', {
-			eager: true,
-		}),
-	).map((i) =>
-		Promise.resolve(i.install?.({ app, router, routes, head, store })),
-	),
-)
-	.then(() => {
-		logger.log('All modules installed')
-	})
-	.catch((e) => {
-		logger.error(e)
-	})
+Object.values(
+	import.meta.glob<{ install: AppModule }>('./modules/*.ts', {
+		eager: true,
+	}),
+).forEach((i) => i.install?.({ app, router, store }))
 
 app.mount('#app')

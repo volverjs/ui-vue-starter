@@ -1,0 +1,20 @@
+{
+  "pj": {
+    "action": {
+      "add": "Add",
+      "backToHome": "Back to Home",
+      "delete": "Delete"
+    },
+    "description": "A Volverjs Template (Vite + Vue) inspired by Vitesse",
+    "message": {
+      "noData": "Empty list",
+      "addSuccess": "Add successfully",
+      "deleteSuccess": "Delete successfully"
+    },
+    "section": {
+      "examples": "Examples",
+      "gettingStarted": "Getting started"
+    },
+    "title": "Volver Vue Starter"
+  }
+}

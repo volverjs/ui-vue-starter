@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 	const { isDark, toggleDark } = useTheme()
 </script>
+
 <template>
 	<nav class="flex border-b border-surface-3 p-16 items-center">
 		<VvAction
