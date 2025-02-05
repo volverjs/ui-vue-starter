@@ -30,6 +30,6 @@ Object.values(
 	import.meta.glob<{ install: AppModule }>('./modules/*.ts', {
 		eager: true,
 	}),
-).map((i) => i.install?.({ app, router, store }))
+).forEach((i) => i.install?.({ app, router, store }))
 
 app.mount('#app')
