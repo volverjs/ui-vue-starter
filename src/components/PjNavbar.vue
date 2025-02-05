@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 	const { isDark, toggleDark } = useTheme()
 </script>
+
 <template>
 	<nav class="flex border-b border-surface-3 p-16 items-center">
 		<VvAction
-			:to="{ name: 'index' }"
+			:to="{ name: 'Root' }"
 			class="flex items-center"
 			title="Go to home">
 			<img src="/volverjs.svg" alt="Volver" class="w-26 block mr-10" />

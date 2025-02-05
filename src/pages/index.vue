@@ -1,3 +1,7 @@
+<script setup lang="ts">
+	const { t } = useI18n()
+</script>
+
 <template>
 	<div class="flex flex-col flex-1 mx-auto px-lg min-w-full bg-surface-1">
 		<div class="flex flex-col items-center justify-center py-lg my-auto">
@@ -6,10 +10,10 @@
 			</a>
 			<div class="text-center mb-lg">
 				<h1 class="vv-text vv-text--size-1 font-serif font-bold">
-					Volverjs Vue Starter
+					{{ $t('pj.title') }}
 				</h1>
 				<h2 class="vv-text vv-text--size-4 text-word-3 mb-lg">
-					A Volverjs Template (Vite + Vue) inspired by Vitesse
+					{{ $t('pj.description') }}
 				</h2>
 				<PjCodeBlock
 					:code="[
@@ -21,19 +25,28 @@
 			<VvButtonGroup>
 				<VvButton
 					:to="{
-						name: 'docs',
+						name: 'Docs',
 					}"
 					modifiers="primary rounded">
-					Getting Started
+					{{ t('gettingStarted') }}
 				</VvButton>
 				<VvButton
 					modifiers="secondary rounded"
 					target="_blank"
 					href="https://github.com/volverjs/ui-vue">
-					UI Vue
+					{{ t('uiVue') }}
 				</VvButton>
 			</VvButtonGroup>
 		</div>
 		<PjFooter />
 	</div>
 </template>
+
+<i18n lang="json">
+{
+	"en": {
+		"gettingStarted": "Getting Started",
+		"uiVue": "UI Vue"
+	}
+}
+</i18n>

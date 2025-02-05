@@ -1,13 +1,10 @@
-import { App } from 'vue'
-import { Router, RouteRecordRaw } from 'vue-router'
-import { HeadClient } from '@vueuse/head'
-import { Pinia } from 'pinia'
+import type { App } from 'vue'
+import type { Router } from 'vue-router'
+import type { Pinia } from 'pinia'
 
 interface AppContext<HasRouter extends boolean = true> {
 	app: App<Element>
 	router: HasRouter extends true ? Router : undefined
-	routes: HasRouter extends true ? RouteRecordRaw[] : undefined
-	head: HeadClient | undefined
 	store: Pinia
 }
 

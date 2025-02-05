@@ -5,13 +5,16 @@
 	const { removeAlert, alerts } = useAlert()
 
 	const { colorHex } = useColor('brand')
+	const { t: $t } = useI18n({
+		useScope: 'global',
+	})
 
 	useHead({
-		title: 'Volver Vue Starter',
+		title: $t('pj.title'),
 		meta: [
 			{
 				name: 'description',
-				content: 'A Volverjs Template (Vite + Vue) inspired by Vitesse',
+				content: $t('pj.description'),
 			},
 			{
 				name: 'theme-color',
@@ -30,8 +33,8 @@
 	<VvAlertGroup
 		name="alerts"
 		:items="alerts"
-		inline="middle"
-		block="bottom"
+		inline="end"
+		block="top"
 		position="fixed"
 		@close="removeAlert" />
 </template>

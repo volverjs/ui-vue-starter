@@ -1,24 +1,22 @@
 <script lang="ts" setup>
-	import type { PropType } from 'vue'
-	import type { RouterLinkProps } from 'vue-router'
-	defineProps({
-		menuItems: {
-			type: Array as PropType<
-				{
-					title: string
-					children: {
-						label: string
-						to: RouterLinkProps
-					}[]
+	withDefaults(
+		defineProps<{
+			menuItems: {
+				title: string
+				children?: {
+					label: string
+					to?: string | Record<string, unknown> | undefined
 				}[]
-			>,
-			default: () => [],
+			}[]
+		}>(),
+		{
+			menuItems: () => [],
 		},
-	})
+	)
 </script>
 
 <template>
-	<nav class="vv-nav vv-nav--sidebar">
+	<nav class="vv-nav vv-nav--sidebar w-288 p-md">
 		<ul class="vv-nav__menu" role="menu">
 			<template
 				v-for="(block, blockIndex) in menuItems"

@@ -11,11 +11,11 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 
 <br>
 
-#### proudly powered by
+maintained with ❤️ by
 
 <br>
 
-[![24/Consulting](public/24consulting.svg)](https://24consulting.it)
+[![8 Wave](public/8wave.svg)](https://8wave.it)
 
 <br>
 
@@ -54,13 +54,14 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 ### Plugins
 
 -   [Vue Router](https://github.com/vuejs/router)
-    -   [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - File system based routing
+    -   [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) - File system based routing
 -   [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
 -   [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - Components auto import
 -   [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
 -   [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
+-   [`vite-plugin-webfont-dl`](https://github.com/feat-agency/vite-plugin-webfont-dl) - Download webfonts locally
 -   [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
-    -   [`unplugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n) - Unplugin for Vue I18n
+    -   [`@intlify/unplugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n) - Unplugin for Vue I18n
 -   [VueUse](https://github.com/antfu/vueuse) - Collection of useful composition APIs
 -   [`@vueuse/head`](https://github.com/vueuse/head) - Manipulate document head reactively
 
