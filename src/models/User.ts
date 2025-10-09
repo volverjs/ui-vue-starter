@@ -1,4 +1,4 @@
-import { z } from 'zod'
+import z from 'zod/v4'
 
 export enum UserRole {
 	User = 'user',
@@ -11,8 +11,8 @@ export const UserSchema = z.object({
 	lastName: z.string().min(1),
 	nickname: z.string().default('').optional(),
 	age: z.number().int().min(18),
-	email: z.string().email(),
-	role: z.nativeEnum(UserRole),
+	email: z.email(),
+	role: z.enum(UserRole),
 })
 
 export type User = z.infer<typeof UserSchema>
