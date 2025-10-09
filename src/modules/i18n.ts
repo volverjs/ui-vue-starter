@@ -1,8 +1,8 @@
-import z from 'zod'
+import z from 'zod/v4'
 import type { AppModule } from '~/types'
 import { createI18n } from 'vue-i18n'
-import { makeZodI18nMap } from '@volverjs/zod-vue-i18n'
-import en from '@volverjs/zod-vue-i18n/locales/en.json'
+import { makeZodI18nMap } from '@volverjs/zod-vue-i18n/v4'
+import en from '@volverjs/zod-vue-i18n/locales/v4/en.json'
 import messages from '@intlify/unplugin-vue-i18n/messages'
 
 /*

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 	withDefaults(
 		defineProps<{
-			menuItems: {
+			menuItems?: {
 				title: string
 				children?: {
 					label: string
