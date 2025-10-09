@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 	const props = withDefaults(
 		defineProps<{
-			code: string | string[]
+			code?: string | string[]
 		}>(),
 		{
 			code: '',
